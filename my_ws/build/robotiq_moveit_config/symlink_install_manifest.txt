@@ -1,0 +1,16 @@
+/home/hw/my_project/my_ws/install/robotiq_moveit_config/share/robotiq_moveit_config/srdf/robotiq_macro.srdf.xacro
+/home/hw/my_project/my_ws/install/robotiq_moveit_config/share/ament_index/resource_index/package_run_dependencies/robotiq_moveit_config
+/home/hw/my_project/my_ws/install/robotiq_moveit_config/share/ament_index/resource_index/parent_prefix_path/robotiq_moveit_config
+/home/hw/my_project/my_ws/install/robotiq_moveit_config/share/robotiq_moveit_config/environment/ament_prefix_path.sh
+/home/hw/my_project/my_ws/install/robotiq_moveit_config/share/robotiq_moveit_config/environment/ament_prefix_path.dsv
+/home/hw/my_project/my_ws/install/robotiq_moveit_config/share/robotiq_moveit_config/environment/path.sh
+/home/hw/my_project/my_ws/install/robotiq_moveit_config/share/robotiq_moveit_config/environment/path.dsv
+/home/hw/my_project/my_ws/install/robotiq_moveit_config/share/robotiq_moveit_config/local_setup.bash
+/home/hw/my_project/my_ws/install/robotiq_moveit_config/share/robotiq_moveit_config/local_setup.sh
+/home/hw/my_project/my_ws/install/robotiq_moveit_config/share/robotiq_moveit_config/local_setup.zsh
+/home/hw/my_project/my_ws/install/robotiq_moveit_config/share/robotiq_moveit_config/local_setup.dsv
+/home/hw/my_project/my_ws/install/robotiq_moveit_config/share/robotiq_moveit_config/package.dsv
+/home/hw/my_project/my_ws/install/robotiq_moveit_config/share/ament_index/resource_index/packages/robotiq_moveit_config
+/home/hw/my_project/my_ws/install/robotiq_moveit_config/share/robotiq_moveit_config/cmake/robotiq_moveit_configConfig.cmake
+/home/hw/my_project/my_ws/install/robotiq_moveit_config/share/robotiq_moveit_config/cmake/robotiq_moveit_configConfig-version.cmake
+/home/hw/my_project/my_ws/install/robotiq_moveit_config/share/robotiq_moveit_config/package.xml

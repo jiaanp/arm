@@ -1,0 +1,13 @@
+package.xml
+setup.cfg
+setup.py
+launch/simulation.launch.py
+launch/start_grasp.launch.py
+resource/ur_bringup
+ur_bringup.egg-info/PKG-INFO
+ur_bringup.egg-info/SOURCES.txt
+ur_bringup.egg-info/dependency_links.txt
+ur_bringup.egg-info/entry_points.txt
+ur_bringup.egg-info/requires.txt
+ur_bringup.egg-info/top_level.txt
+ur_bringup.egg-info/zip-safe

@@ -1,0 +1,1 @@
+/home/hw/my_project/my_ws/src/sim_models/realsense-ros/realsense2_camera_msgs/msg/Metadata.msg

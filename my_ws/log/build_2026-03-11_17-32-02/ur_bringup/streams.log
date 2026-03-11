@@ -1,0 +1,28 @@
+[1.334s] Invoking command in '/home/hw/my_project/my_ws/build/ur_bringup': PYTHONPATH=/home/hw/my_project/my_ws/build/ur_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hw/my_project/my_ws/install/ur_bringup/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/hw/my_project/my_ws/build/ur_bringup/build --no-deps symlink_data
+[1.732s] running develop
+[1.985s] running egg_info
+[1.987s] creating ur_bringup.egg-info
+[1.987s] writing ur_bringup.egg-info/PKG-INFO
+[1.987s] writing dependency_links to ur_bringup.egg-info/dependency_links.txt
+[1.987s] writing entry points to ur_bringup.egg-info/entry_points.txt
+[1.987s] writing requirements to ur_bringup.egg-info/requires.txt
+[1.988s] writing top-level names to ur_bringup.egg-info/top_level.txt
+[1.988s] writing manifest file 'ur_bringup.egg-info/SOURCES.txt'
+[1.989s] reading manifest file 'ur_bringup.egg-info/SOURCES.txt'
+[1.990s] writing manifest file 'ur_bringup.egg-info/SOURCES.txt'
+[1.991s] running build_ext
+[1.992s] Creating /home/hw/my_project/my_ws/install/ur_bringup/lib/python3.10/site-packages/ur-bringup.egg-link (link to .)
+[1.993s] 
+[1.993s] Installed /home/hw/my_project/my_ws/build/ur_bringup
+[1.993s] running symlink_data
+[1.993s] creating /home/hw/my_project/my_ws/install/ur_bringup/share/ament_index
+[1.993s] creating /home/hw/my_project/my_ws/install/ur_bringup/share/ament_index/resource_index
+[1.993s] creating /home/hw/my_project/my_ws/install/ur_bringup/share/ament_index/resource_index/packages
+[1.994s] symbolically linking /home/hw/my_project/my_ws/build/ur_bringup/resource/ur_bringup -> /home/hw/my_project/my_ws/install/ur_bringup/share/ament_index/resource_index/packages
+[1.994s] symbolically linking /home/hw/my_project/my_ws/build/ur_bringup/package.xml -> /home/hw/my_project/my_ws/install/ur_bringup/share/ur_bringup
+[1.994s] creating /home/hw/my_project/my_ws/install/ur_bringup/share/ur_bringup/launch
+[1.994s] symbolically linking /home/hw/my_project/my_ws/build/ur_bringup/launch/simulation.launch.py -> /home/hw/my_project/my_ws/install/ur_bringup/share/ur_bringup/launch
+[1.994s] symbolically linking /home/hw/my_project/my_ws/build/ur_bringup/launch/start_grasp.launch.py -> /home/hw/my_project/my_ws/install/ur_bringup/share/ur_bringup/launch
+[1.994s] creating /home/hw/my_project/my_ws/install/ur_bringup/share/ur_bringup/config
+[1.994s] creating /home/hw/my_project/my_ws/install/ur_bringup/share/ur_bringup/rviz
+[2.064s] Invoked command in '/home/hw/my_project/my_ws/build/ur_bringup' returned '0': PYTHONPATH=/home/hw/my_project/my_ws/build/ur_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hw/my_project/my_ws/install/ur_bringup/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/hw/my_project/my_ws/build/ur_bringup/build --no-deps symlink_data

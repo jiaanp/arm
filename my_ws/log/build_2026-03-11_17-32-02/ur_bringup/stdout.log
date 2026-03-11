@@ -1,0 +1,26 @@
+running develop
+running egg_info
+creating ur_bringup.egg-info
+writing ur_bringup.egg-info/PKG-INFO
+writing dependency_links to ur_bringup.egg-info/dependency_links.txt
+writing entry points to ur_bringup.egg-info/entry_points.txt
+writing requirements to ur_bringup.egg-info/requires.txt
+writing top-level names to ur_bringup.egg-info/top_level.txt
+writing manifest file 'ur_bringup.egg-info/SOURCES.txt'
+reading manifest file 'ur_bringup.egg-info/SOURCES.txt'
+writing manifest file 'ur_bringup.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/hw/my_project/my_ws/install/ur_bringup/lib/python3.10/site-packages/ur-bringup.egg-link (link to .)
+
+Installed /home/hw/my_project/my_ws/build/ur_bringup
+running symlink_data
+creating /home/hw/my_project/my_ws/install/ur_bringup/share/ament_index
+creating /home/hw/my_project/my_ws/install/ur_bringup/share/ament_index/resource_index
+creating /home/hw/my_project/my_ws/install/ur_bringup/share/ament_index/resource_index/packages
+symbolically linking /home/hw/my_project/my_ws/build/ur_bringup/resource/ur_bringup -> /home/hw/my_project/my_ws/install/ur_bringup/share/ament_index/resource_index/packages
+symbolically linking /home/hw/my_project/my_ws/build/ur_bringup/package.xml -> /home/hw/my_project/my_ws/install/ur_bringup/share/ur_bringup
+creating /home/hw/my_project/my_ws/install/ur_bringup/share/ur_bringup/launch
+symbolically linking /home/hw/my_project/my_ws/build/ur_bringup/launch/simulation.launch.py -> /home/hw/my_project/my_ws/install/ur_bringup/share/ur_bringup/launch
+symbolically linking /home/hw/my_project/my_ws/build/ur_bringup/launch/start_grasp.launch.py -> /home/hw/my_project/my_ws/install/ur_bringup/share/ur_bringup/launch
+creating /home/hw/my_project/my_ws/install/ur_bringup/share/ur_bringup/config
+creating /home/hw/my_project/my_ws/install/ur_bringup/share/ur_bringup/rviz

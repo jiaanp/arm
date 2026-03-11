@@ -1,0 +1,28 @@
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CATKIN_INSTALL_INTO_PREFIX_ROOT
+    CATKIN_SYMLINK_INSTALL
+
+
+In file included from /usr/include/boost/bind.hpp:30,
+                 from /home/hw/my_project/my_ws/src/sim_models/gazebo_grasp_plugin/src/GazeboGraspGripper.cpp:1:
+/usr/include/boost/bind.hpp:36:1: note: ‘#pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.’
+   36 | BOOST_PRAGMA_MESSAGE(
+      | ^~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/boost/bind.hpp:30,
+                 from /home/hw/my_project/my_ws/src/sim_models/gazebo_grasp_plugin/src/GazeboGraspFix.cpp:1:
+/usr/include/boost/bind.hpp:36:1: note: ‘#pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.’
+   36 | BOOST_PRAGMA_MESSAGE(
+      | ^~~~~~~~~~~~~~~~~~~~
+/home/hw/my_project/my_ws/src/sim_models/gazebo_grasp_plugin/src/GazeboGraspFix.cpp: In member function ‘void gazebo::GazeboGraspFix::OnUpdate()’:
+/home/hw/my_project/my_ws/src/sim_models/gazebo_grasp_plugin/src/GazeboGraspFix.cpp:665:39: warning: implicitly-declared ‘gazebo::GazeboGraspFix::CollidingPoint& gazebo::GazeboGraspFix::CollidingPoint::operator=(const gazebo::GazeboGraspFix::CollidingPoint&)’ is deprecated [-Wdeprecated-copy]
+  665 |         attGripConts[collidingLink] = collidingPoint;
+      |                                       ^~~~~~~~~~~~~~
+/home/hw/my_project/my_ws/src/sim_models/gazebo_grasp_plugin/src/GazeboGraspFix.cpp:399:5: note: because ‘gazebo::GazeboGraspFix::CollidingPoint’ has user-provided ‘gazebo::GazeboGraspFix::CollidingPoint::CollidingPoint(const gazebo::GazeboGraspFix::CollidingPoint&)’
+  399 |     CollidingPoint(const CollidingPoint &o):
+      |     ^~~~~~~~~~~~~~
+/home/hw/my_project/my_ws/src/sim_models/gazebo_grasp_plugin/src/GazeboGraspFix.cpp: In member function ‘void gazebo::GazeboGraspFix::OnContact(ConstContactsPtr&)’:
+/home/hw/my_project/my_ws/src/sim_models/gazebo_grasp_plugin/src/GazeboGraspFix.cpp:908:25: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ignition::math::v6::Vector3<double> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  908 |       for (int k = 0; k < force.size(); ++k)
+      |                       ~~^~~~~~~~~~~~~~

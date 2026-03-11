@@ -1,0 +1,1 @@
+/home/hw/my_project/my_ws/src/vision/launch/seg_and_det.launch.py

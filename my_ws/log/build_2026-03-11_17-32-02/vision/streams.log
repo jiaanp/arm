@@ -1,0 +1,36 @@
+[1.341s] Invoking command in '/home/hw/my_project/my_ws/build/vision': PYTHONPATH=/home/hw/my_project/my_ws/build/vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hw/my_project/my_ws/install/vision/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/hw/my_project/my_ws/build/vision/build --no-deps symlink_data
+[1.828s] running develop
+[2.054s] running egg_info
+[2.054s] creating vision.egg-info
+[2.066s] writing vision.egg-info/PKG-INFO
+[2.066s] writing dependency_links to vision.egg-info/dependency_links.txt
+[2.066s] writing entry points to vision.egg-info/entry_points.txt
+[2.066s] writing requirements to vision.egg-info/requires.txt
+[2.066s] writing top-level names to vision.egg-info/top_level.txt
+[2.066s] writing manifest file 'vision.egg-info/SOURCES.txt'
+[2.066s] reading manifest file 'vision.egg-info/SOURCES.txt'
+[2.066s] writing manifest file 'vision.egg-info/SOURCES.txt'
+[2.066s] running build_ext
+[2.066s] Creating /home/hw/my_project/my_ws/install/vision/lib/python3.10/site-packages/vision.egg-link (link to .)
+[2.066s] Installing det_tf script to /home/hw/my_project/my_ws/install/vision/lib/vision
+[2.066s] Installing obj_detect script to /home/hw/my_project/my_ws/install/vision/lib/vision
+[2.066s] Installing obj_seg script to /home/hw/my_project/my_ws/install/vision/lib/vision
+[2.066s] Installing openai_selector script to /home/hw/my_project/my_ws/install/vision/lib/vision
+[2.067s] Installing point_cloud_processor script to /home/hw/my_project/my_ws/install/vision/lib/vision
+[2.067s] Installing record script to /home/hw/my_project/my_ws/install/vision/lib/vision
+[2.067s] Installing wrist_yaw_estimator script to /home/hw/my_project/my_ws/install/vision/lib/vision
+[2.067s] 
+[2.067s] Installed /home/hw/my_project/my_ws/build/vision
+[2.067s] running symlink_data
+[2.067s] creating /home/hw/my_project/my_ws/install/vision/share/ament_index
+[2.067s] creating /home/hw/my_project/my_ws/install/vision/share/ament_index/resource_index
+[2.067s] creating /home/hw/my_project/my_ws/install/vision/share/ament_index/resource_index/packages
+[2.067s] symbolically linking /home/hw/my_project/my_ws/build/vision/resource/vision -> /home/hw/my_project/my_ws/install/vision/share/ament_index/resource_index/packages
+[2.067s] symbolically linking /home/hw/my_project/my_ws/build/vision/package.xml -> /home/hw/my_project/my_ws/install/vision/share/vision
+[2.067s] creating /home/hw/my_project/my_ws/install/vision/share/vision/launch
+[2.067s] symbolically linking /home/hw/my_project/my_ws/build/vision/launch/register_depth.launch.py -> /home/hw/my_project/my_ws/install/vision/share/vision/launch
+[2.067s] symbolically linking /home/hw/my_project/my_ws/build/vision/launch/seg_and_det.launch.py -> /home/hw/my_project/my_ws/install/vision/share/vision/launch
+[2.067s] creating /home/hw/my_project/my_ws/install/vision/share/vision/rviz
+[2.067s] symbolically linking /home/hw/my_project/my_ws/build/vision/rviz/depth_register.rviz -> /home/hw/my_project/my_ws/install/vision/share/vision/rviz
+[2.067s] package init file 'vision/yolov11/models/__init__.py' not found (or not a regular file)
+[2.164s] Invoked command in '/home/hw/my_project/my_ws/build/vision' returned '0': PYTHONPATH=/home/hw/my_project/my_ws/build/vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hw/my_project/my_ws/install/vision/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/hw/my_project/my_ws/build/vision/build --no-deps symlink_data

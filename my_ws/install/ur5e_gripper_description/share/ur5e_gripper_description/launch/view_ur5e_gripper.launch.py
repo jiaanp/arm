@@ -1,0 +1,1 @@
+/home/hw/my_project/my_ws/src/ur5e_gripper_description/launch/view_ur5e_gripper.launch.py

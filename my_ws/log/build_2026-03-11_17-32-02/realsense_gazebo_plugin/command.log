@@ -1,0 +1,6 @@
+Invoking command in '/home/hw/my_project/my_ws/build/realsense_gazebo_plugin': /usr/bin/cmake /home/hw/my_project/my_ws/src/sim_models/realsense_gazebo_plugin -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/hw/my_project/my_ws/install/realsense_gazebo_plugin
+Invoked command in '/home/hw/my_project/my_ws/build/realsense_gazebo_plugin' returned '0': /usr/bin/cmake /home/hw/my_project/my_ws/src/sim_models/realsense_gazebo_plugin -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/hw/my_project/my_ws/install/realsense_gazebo_plugin
+Invoking command in '/home/hw/my_project/my_ws/build/realsense_gazebo_plugin': /usr/bin/cmake --build /home/hw/my_project/my_ws/build/realsense_gazebo_plugin -- -j16 -l16
+Invoked command in '/home/hw/my_project/my_ws/build/realsense_gazebo_plugin' returned '0': /usr/bin/cmake --build /home/hw/my_project/my_ws/build/realsense_gazebo_plugin -- -j16 -l16
+Invoking command in '/home/hw/my_project/my_ws/build/realsense_gazebo_plugin': /usr/bin/cmake --install /home/hw/my_project/my_ws/build/realsense_gazebo_plugin
+Invoked command in '/home/hw/my_project/my_ws/build/realsense_gazebo_plugin' returned '0': /usr/bin/cmake --install /home/hw/my_project/my_ws/build/realsense_gazebo_plugin

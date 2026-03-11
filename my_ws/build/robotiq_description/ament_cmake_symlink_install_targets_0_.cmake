@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/hw/my_project/my_ws/build/robotiq_description/test_gripper_in_gazebo" "TARGETS" "test_gripper_in_gazebo" "DESTINATION" "lib/robotiq_description")

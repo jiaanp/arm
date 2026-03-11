@@ -1,0 +1,34 @@
+running develop
+running egg_info
+creating vision.egg-info
+writing vision.egg-info/PKG-INFO
+writing dependency_links to vision.egg-info/dependency_links.txt
+writing entry points to vision.egg-info/entry_points.txt
+writing requirements to vision.egg-info/requires.txt
+writing top-level names to vision.egg-info/top_level.txt
+writing manifest file 'vision.egg-info/SOURCES.txt'
+reading manifest file 'vision.egg-info/SOURCES.txt'
+writing manifest file 'vision.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/hw/my_project/my_ws/install/vision/lib/python3.10/site-packages/vision.egg-link (link to .)
+Installing det_tf script to /home/hw/my_project/my_ws/install/vision/lib/vision
+Installing obj_detect script to /home/hw/my_project/my_ws/install/vision/lib/vision
+Installing obj_seg script to /home/hw/my_project/my_ws/install/vision/lib/vision
+Installing openai_selector script to /home/hw/my_project/my_ws/install/vision/lib/vision
+Installing point_cloud_processor script to /home/hw/my_project/my_ws/install/vision/lib/vision
+Installing record script to /home/hw/my_project/my_ws/install/vision/lib/vision
+Installing wrist_yaw_estimator script to /home/hw/my_project/my_ws/install/vision/lib/vision
+
+Installed /home/hw/my_project/my_ws/build/vision
+running symlink_data
+creating /home/hw/my_project/my_ws/install/vision/share/ament_index
+creating /home/hw/my_project/my_ws/install/vision/share/ament_index/resource_index
+creating /home/hw/my_project/my_ws/install/vision/share/ament_index/resource_index/packages
+symbolically linking /home/hw/my_project/my_ws/build/vision/resource/vision -> /home/hw/my_project/my_ws/install/vision/share/ament_index/resource_index/packages
+symbolically linking /home/hw/my_project/my_ws/build/vision/package.xml -> /home/hw/my_project/my_ws/install/vision/share/vision
+creating /home/hw/my_project/my_ws/install/vision/share/vision/launch
+symbolically linking /home/hw/my_project/my_ws/build/vision/launch/register_depth.launch.py -> /home/hw/my_project/my_ws/install/vision/share/vision/launch
+symbolically linking /home/hw/my_project/my_ws/build/vision/launch/seg_and_det.launch.py -> /home/hw/my_project/my_ws/install/vision/share/vision/launch
+creating /home/hw/my_project/my_ws/install/vision/share/vision/rviz
+symbolically linking /home/hw/my_project/my_ws/build/vision/rviz/depth_register.rviz -> /home/hw/my_project/my_ws/install/vision/share/vision/rviz
+package init file 'vision/yolov11/models/__init__.py' not found (or not a regular file)

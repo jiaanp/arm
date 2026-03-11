@@ -1,0 +1,9 @@
+[console_scripts]
+det_tf = vision.det_tf:main
+obj_detect = vision.obj_detect:main
+obj_seg = vision.obj_seg:main
+openai_selector = vision.openai_selector:main
+point_cloud_processor = vision.point_cloud_processor:main
+record = vision.record:main
+wrist_yaw_estimator = vision.wrist_yaw_estimator:main
+

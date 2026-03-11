@@ -1,0 +1,211 @@
+[0.051s] Invoking command in '/home/hw/my_project/my_ws/build/gazebo_grasp_plugin': AMENT_PREFIX_PATH=/home/hw/my_project/my_ws/install/gazebo_version_helpers:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hw/my_project/my_ws/install/gazebo_version_helpers LD_LIBRARY_PATH=/home/hw/my_project/my_ws/install/gazebo_version_helpers/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/hw/my_project/my_ws/src/sim_models/gazebo_grasp_plugin -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/hw/my_project/my_ws/install/gazebo_grasp_plugin
+[0.127s] -- The C compiler identification is GNU 11.4.0
+[0.199s] -- The CXX compiler identification is GNU 11.4.0
+[0.208s] -- Detecting C compiler ABI info
+[0.308s] -- Detecting C compiler ABI info - done
+[0.315s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.315s] -- Detecting C compile features
+[0.316s] -- Detecting C compile features - done
+[0.320s] -- Detecting CXX compiler ABI info
+[0.432s] -- Detecting CXX compiler ABI info - done
+[0.437s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.437s] -- Detecting CXX compile features
+[0.438s] -- Detecting CXX compile features - done
+[0.441s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.604s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.708s] -- Found gazebo_dev: 3.9.0 (/opt/ros/humble/share/gazebo_dev/cmake)
+[0.718s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[0.723s] -- Checking for module 'bullet>=2.82'
+[0.745s] --   Found bullet, version 3.05
+[0.916s] -- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") 
+[1.004s] -- Found assimp: /usr/include (found version "5.2.0") 
+[1.018s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[1.257s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time 
+[1.277s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[1.285s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.293s] -- Searching for dependencies of ignition-math6
+[1.295s] -- Looking for OGRE...
+[1.295s] -- OGRE_PREFIX_WATCH changed.
+[1.303s] -- Checking for module 'OGRE'
+[1.324s] --   Found OGRE, version 1.9.0
+[1.378s] -- Found Ogre Ghadamon (1.9.0)
+[1.388s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[1.397s] -- Looking for OGRE_Paging...
+[1.403s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[1.403s] -- Looking for OGRE_Terrain...
+[1.407s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[1.408s] -- Looking for OGRE_Property...
+[1.411s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[1.411s] -- Looking for OGRE_RTShaderSystem...
+[1.415s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[1.415s] -- Looking for OGRE_Volume...
+[1.420s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[1.420s] -- Looking for OGRE_Overlay...
+[1.425s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[1.545s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.548s] -- Looking for ignition-transport8 -- found version 8.2.1
+[1.548s] -- Searching for dependencies of ignition-transport8
+[1.571s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[1.585s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[1.592s] -- Checking for module 'libzmq >= 4'
+[1.615s] --   Found libzmq , version 4.3.4
+[1.684s] -- Found ZeroMQ: TRUE (Required is at least version "4") 
+[1.692s] -- Checking for module 'uuid'
+[1.715s] --   Found uuid, version 2.37.2
+[1.776s] -- Found UUID: TRUE  
+[1.780s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.780s] -- Searching for dependencies of ignition-msgs5
+[1.807s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.814s] -- Checking for module 'tinyxml2'
+[1.838s] --   Found tinyxml2, version 9.0.0
+[1.899s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.902s] -- Looking for ignition-common3 -- found version 3.14.0
+[1.903s] -- Searching for dependencies of ignition-common3
+[1.903s] -- Looking for dlfcn.h - found
+[1.905s] -- Looking for libdl - found
+[1.906s] -- Found DL: TRUE  
+[1.920s] -- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") 
+[1.921s] -- Searching for <ignition-common3> component [graphics]
+[1.923s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[1.924s] -- Searching for dependencies of ignition-common3-graphics
+[1.925s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.929s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[1.930s] -- Searching for dependencies of ignition-fuel_tools4
+[2.055s] -- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  
+[2.068s] -- Checking for module 'jsoncpp'
+[2.091s] --   Found jsoncpp, version 1.9.5
+[2.152s] -- Found JSONCPP: TRUE  
+[2.160s] -- Checking for module 'libzip'
+[2.180s] --   Found libzip, version 1.7.3
+[2.243s] -- Found ZIP: TRUE  
+[2.244s] -- Looking for ignition-common3 -- found version 3.14.0
+[2.244s] -- Looking for ignition-math6 -- found version 6.15.1
+[2.245s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[2.250s] -- Gazebo version: 11.10
+[2.250s] -- Checking for module 'tbb'
+[2.271s] --   Found tbb, version 2021.5.0
+[2.330s] -- Found gazebo_ros: 3.9.0 (/opt/ros/humble/share/gazebo_ros/cmake)
+[2.384s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.392s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.402s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.417s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.439s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.493s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.497s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.637s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[2.669s] -- Found FastRTPS: /opt/ros/humble/include  
+[2.727s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.739s] -- Found Threads: TRUE  
+[2.790s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[2.800s] -- Found gazebo_version_helpers: 0.0.0 (/home/hw/my_project/my_ws/install/gazebo_version_helpers/share/gazebo_version_helpers/cmake)
+[2.817s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[2.895s] -- Configuring done
+[2.944s] -- Generating done
+[2.946s] CMake Warning:
+[2.946s]   Manually-specified variables were not used by the project:
+[2.946s] 
+[2.946s]     CATKIN_INSTALL_INTO_PREFIX_ROOT
+[2.946s]     CATKIN_SYMLINK_INSTALL
+[2.946s] 
+[2.946s] 
+[2.951s] -- Build files have been written to: /home/hw/my_project/my_ws/build/gazebo_grasp_plugin
+[11.763s] Invoked command in '/home/hw/my_project/my_ws/build/gazebo_grasp_plugin' returned '0': AMENT_PREFIX_PATH=/home/hw/my_project/my_ws/install/gazebo_version_helpers:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hw/my_project/my_ws/install/gazebo_version_helpers LD_LIBRARY_PATH=/home/hw/my_project/my_ws/install/gazebo_version_helpers/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/hw/my_project/my_ws/src/sim_models/gazebo_grasp_plugin -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/hw/my_project/my_ws/install/gazebo_grasp_plugin
+[11.764s] Invoking command in '/home/hw/my_project/my_ws/build/gazebo_grasp_plugin': AMENT_PREFIX_PATH=/home/hw/my_project/my_ws/install/gazebo_version_helpers:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hw/my_project/my_ws/install/gazebo_version_helpers LD_LIBRARY_PATH=/home/hw/my_project/my_ws/install/gazebo_version_helpers/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/hw/my_project/my_ws/build/gazebo_grasp_plugin -- -j16 -l16
+[11.818s] [ 16%] Running cpp protocol buffer compiler on msgs/grasp_event.proto
+[11.867s] [ 33%] Building CXX object CMakeFiles/gazebo_grasp_msgs.dir/grasp_event.pb.cc.o
+[12.635s] [ 50%] Linking CXX shared library libgazebo_grasp_msgs.so
+[12.732s] Moving protobuf headers to msgs directory
+[12.768s] [ 50%] Built target gazebo_grasp_msgs
+[12.801s] [ 83%] Building CXX object CMakeFiles/gazebo_grasp_fix.dir/src/GazeboGraspFix.cpp.o
+[12.801s] [ 83%] Building CXX object CMakeFiles/gazebo_grasp_fix.dir/src/GazeboGraspGripper.cpp.o
+[16.493s] In file included from /usr/include/boost/bind.hpp:30,
+[16.493s]                  from /home/hw/my_project/my_ws/src/sim_models/gazebo_grasp_plugin/src/GazeboGraspGripper.cpp:1:
+[16.494s] /usr/include/boost/bind.hpp:36:1: note: ‘#pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.’
+[16.494s]    36 | BOOST_PRAGMA_MESSAGE(
+[16.494s]       | ^~~~~~~~~~~~~~~~~~~~
+[16.524s] In file included from /usr/include/boost/bind.hpp:30,
+[16.524s]                  from /home/hw/my_project/my_ws/src/sim_models/gazebo_grasp_plugin/src/GazeboGraspFix.cpp:1:
+[16.524s] /usr/include/boost/bind.hpp:36:1: note: ‘#pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.’
+[16.524s]    36 | BOOST_PRAGMA_MESSAGE(
+[16.524s]       | ^~~~~~~~~~~~~~~~~~~~
+[25.248s] /home/hw/my_project/my_ws/src/sim_models/gazebo_grasp_plugin/src/GazeboGraspFix.cpp: In member function ‘void gazebo::GazeboGraspFix::OnUpdate()’:
+[25.248s] /home/hw/my_project/my_ws/src/sim_models/gazebo_grasp_plugin/src/GazeboGraspFix.cpp:665:39: warning: implicitly-declared ‘gazebo::GazeboGraspFix::CollidingPoint& gazebo::GazeboGraspFix::CollidingPoint::operator=(const gazebo::GazeboGraspFix::CollidingPoint&)’ is deprecated [-Wdeprecated-copy]
+[25.248s]   665 |         attGripConts[collidingLink] = collidingPoint;
+[25.248s]       |                                       ^~~~~~~~~~~~~~
+[25.248s] /home/hw/my_project/my_ws/src/sim_models/gazebo_grasp_plugin/src/GazeboGraspFix.cpp:399:5: note: because ‘gazebo::GazeboGraspFix::CollidingPoint’ has user-provided ‘gazebo::GazeboGraspFix::CollidingPoint::CollidingPoint(const gazebo::GazeboGraspFix::CollidingPoint&)’
+[25.248s]   399 |     CollidingPoint(const CollidingPoint &o):
+[25.248s]       |     ^~~~~~~~~~~~~~
+[25.272s] /home/hw/my_project/my_ws/src/sim_models/gazebo_grasp_plugin/src/GazeboGraspFix.cpp: In member function ‘void gazebo::GazeboGraspFix::OnContact(ConstContactsPtr&)’:
+[25.272s] /home/hw/my_project/my_ws/src/sim_models/gazebo_grasp_plugin/src/GazeboGraspFix.cpp:908:25: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ignition::math::v6::Vector3<double> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+[25.272s]   908 |       for (int k = 0; k < force.size(); ++k)
+[25.272s]       |                       ~~^~~~~~~~~~~~~~
+[31.878s] [100%] Linking CXX shared library libgazebo_grasp_fix.so
+[32.462s] [100%] Built target gazebo_grasp_fix
+[35.044s] Invoked command in '/home/hw/my_project/my_ws/build/gazebo_grasp_plugin' returned '0': AMENT_PREFIX_PATH=/home/hw/my_project/my_ws/install/gazebo_version_helpers:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hw/my_project/my_ws/install/gazebo_version_helpers LD_LIBRARY_PATH=/home/hw/my_project/my_ws/install/gazebo_version_helpers/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/hw/my_project/my_ws/build/gazebo_grasp_plugin -- -j16 -l16
+[35.047s] Invoking command in '/home/hw/my_project/my_ws/build/gazebo_grasp_plugin': AMENT_PREFIX_PATH=/home/hw/my_project/my_ws/install/gazebo_version_helpers:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hw/my_project/my_ws/install/gazebo_version_helpers LD_LIBRARY_PATH=/home/hw/my_project/my_ws/install/gazebo_version_helpers/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/hw/my_project/my_ws/build/gazebo_grasp_plugin
+[35.056s] -- Install configuration: ""
+[35.057s] -- Installing: /home/hw/my_project/my_ws/install/gazebo_grasp_plugin/lib/libgazebo_grasp_fix.so
+[35.061s] -- Set runtime path of "/home/hw/my_project/my_ws/install/gazebo_grasp_plugin/lib/libgazebo_grasp_fix.so" to ""
+[35.061s] -- Installing: /home/hw/my_project/my_ws/install/gazebo_grasp_plugin/lib/libgazebo_grasp_msgs.so
+[35.062s] -- Installing: /home/hw/my_project/my_ws/install/gazebo_grasp_plugin/include
+[35.062s] -- Installing: /home/hw/my_project/my_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin
+[35.062s] -- Installing: /home/hw/my_project/my_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/GazeboGraspGripper.h
+[35.062s] -- Installing: /home/hw/my_project/my_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/GazeboGraspFix.h
+[35.063s] -- Up-to-date: /home/hw/my_project/my_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin
+[35.063s] -- Installing: /home/hw/my_project/my_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/ament_cmake_index
+[35.063s] -- Installing: /home/hw/my_project/my_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/ament_cmake_index/share
+[35.063s] -- Installing: /home/hw/my_project/my_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/ament_cmake_index/share/ament_index
+[35.063s] -- Installing: /home/hw/my_project/my_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/ament_cmake_index/share/ament_index/resource_index
+[35.064s] -- Installing: /home/hw/my_project/my_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies
+[35.064s] -- Installing: /home/hw/my_project/my_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/ament_cmake_index/share/ament_index/resource_index/packages
+[35.064s] -- Installing: /home/hw/my_project/my_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path
+[35.064s] -- Installing: /home/hw/my_project/my_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/ament_cmake_environment_hooks
+[35.065s] -- Installing: /home/hw/my_project/my_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/.cmake
+[35.065s] -- Installing: /home/hw/my_project/my_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/.cmake/api
+[35.065s] -- Installing: /home/hw/my_project/my_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/.cmake/api/v1
+[35.065s] -- Installing: /home/hw/my_project/my_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/.cmake/api/v1/query
+[35.065s] -- Installing: /home/hw/my_project/my_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/.cmake/api/v1/query/client-colcon-cmake
+[35.065s] -- Installing: /home/hw/my_project/my_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/.cmake/api/v1/reply
+[35.065s] -- Installing: /home/hw/my_project/my_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/ament_cmake_export_include_directories
+[35.065s] -- Installing: /home/hw/my_project/my_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/msgs
+[35.065s] -- Installing: /home/hw/my_project/my_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/msgs/grasp_event.pb.h
+[35.065s] -- Installing: /home/hw/my_project/my_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/grasp_event.pb.h
+[35.066s] -- Installing: /home/hw/my_project/my_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/CMakeFiles
+[35.066s] -- Installing: /home/hw/my_project/my_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/CMakeFiles/CMakeTmp
+[35.066s] -- Installing: /home/hw/my_project/my_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir
+[35.066s] -- Installing: /home/hw/my_project/my_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir/src
+[35.066s] -- Installing: /home/hw/my_project/my_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_plugin_uninstall.dir
+[35.066s] -- Installing: /home/hw/my_project/my_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/CMakeFiles/3.22.1
+[35.066s] -- Installing: /home/hw/my_project/my_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/CMakeFiles/3.22.1/CompilerIdCXX
+[35.067s] -- Installing: /home/hw/my_project/my_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/CMakeFiles/3.22.1/CompilerIdCXX/tmp
+[35.067s] -- Installing: /home/hw/my_project/my_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/CMakeFiles/3.22.1/CompilerIdC
+[35.067s] -- Installing: /home/hw/my_project/my_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/CMakeFiles/3.22.1/CompilerIdC/tmp
+[35.067s] -- Installing: /home/hw/my_project/my_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/CMakeFiles/uninstall.dir
+[35.067s] -- Installing: /home/hw/my_project/my_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_msgs.dir
+[35.067s] -- Installing: /home/hw/my_project/my_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/ament_cmake_export_dependencies
+[35.067s] -- Installing: /home/hw/my_project/my_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/ament_cmake_export_libraries
+[35.067s] -- Installing: /home/hw/my_project/my_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/ament_cmake_uninstall_target
+[35.068s] -- Installing: /home/hw/my_project/my_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/ament_cmake_package_templates
+[35.068s] -- Installing: /home/hw/my_project/my_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/ament_cmake_core
+[35.068s] -- Installing: /home/hw/my_project/my_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/ament_cmake_core/stamps
+[35.068s] -- Installing: /home/hw/my_project/my_ws/install/gazebo_grasp_plugin/share/gazebo_grasp_plugin/environment/library_path.sh
+[35.068s] -- Installing: /home/hw/my_project/my_ws/install/gazebo_grasp_plugin/share/gazebo_grasp_plugin/environment/library_path.dsv
+[35.069s] -- Installing: /home/hw/my_project/my_ws/install/gazebo_grasp_plugin/share/ament_index/resource_index/package_run_dependencies/gazebo_grasp_plugin
+[35.069s] -- Installing: /home/hw/my_project/my_ws/install/gazebo_grasp_plugin/share/ament_index/resource_index/parent_prefix_path/gazebo_grasp_plugin
+[35.070s] -- Installing: /home/hw/my_project/my_ws/install/gazebo_grasp_plugin/share/gazebo_grasp_plugin/environment/ament_prefix_path.sh
+[35.070s] -- Installing: /home/hw/my_project/my_ws/install/gazebo_grasp_plugin/share/gazebo_grasp_plugin/environment/ament_prefix_path.dsv
+[35.070s] -- Installing: /home/hw/my_project/my_ws/install/gazebo_grasp_plugin/share/gazebo_grasp_plugin/environment/path.sh
+[35.071s] -- Installing: /home/hw/my_project/my_ws/install/gazebo_grasp_plugin/share/gazebo_grasp_plugin/environment/path.dsv
+[35.071s] -- Installing: /home/hw/my_project/my_ws/install/gazebo_grasp_plugin/share/gazebo_grasp_plugin/local_setup.bash
+[35.071s] -- Installing: /home/hw/my_project/my_ws/install/gazebo_grasp_plugin/share/gazebo_grasp_plugin/local_setup.sh
+[35.071s] -- Installing: /home/hw/my_project/my_ws/install/gazebo_grasp_plugin/share/gazebo_grasp_plugin/local_setup.zsh
+[35.071s] -- Installing: /home/hw/my_project/my_ws/install/gazebo_grasp_plugin/share/gazebo_grasp_plugin/local_setup.dsv
+[35.072s] -- Installing: /home/hw/my_project/my_ws/install/gazebo_grasp_plugin/share/gazebo_grasp_plugin/package.dsv
+[35.072s] -- Installing: /home/hw/my_project/my_ws/install/gazebo_grasp_plugin/share/ament_index/resource_index/packages/gazebo_grasp_plugin
+[35.072s] -- Installing: /home/hw/my_project/my_ws/install/gazebo_grasp_plugin/share/gazebo_grasp_plugin/cmake/ament_cmake_export_include_directories-extras.cmake
+[35.072s] -- Installing: /home/hw/my_project/my_ws/install/gazebo_grasp_plugin/share/gazebo_grasp_plugin/cmake/ament_cmake_export_libraries-extras.cmake
+[35.073s] -- Installing: /home/hw/my_project/my_ws/install/gazebo_grasp_plugin/share/gazebo_grasp_plugin/cmake/ament_cmake_export_dependencies-extras.cmake
+[35.073s] -- Installing: /home/hw/my_project/my_ws/install/gazebo_grasp_plugin/share/gazebo_grasp_plugin/cmake/gazebo_grasp_pluginConfig.cmake
+[35.073s] -- Installing: /home/hw/my_project/my_ws/install/gazebo_grasp_plugin/share/gazebo_grasp_plugin/cmake/gazebo_grasp_pluginConfig-version.cmake
+[35.073s] -- Installing: /home/hw/my_project/my_ws/install/gazebo_grasp_plugin/share/gazebo_grasp_plugin/package.xml
+[35.077s] Invoked command in '/home/hw/my_project/my_ws/build/gazebo_grasp_plugin' returned '0': AMENT_PREFIX_PATH=/home/hw/my_project/my_ws/install/gazebo_version_helpers:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hw/my_project/my_ws/install/gazebo_version_helpers LD_LIBRARY_PATH=/home/hw/my_project/my_ws/install/gazebo_version_helpers/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/hw/my_project/my_ws/build/gazebo_grasp_plugin

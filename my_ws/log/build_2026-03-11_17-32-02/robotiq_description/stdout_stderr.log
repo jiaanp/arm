@@ -1,0 +1,105 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rclcpp: 16.0.17 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+-- Found FastRTPS: /opt/ros/humble/include  
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: 
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/hw/my_project/my_ws/build/robotiq_description
+[ 50%] Building CXX object CMakeFiles/test_gripper_in_gazebo.dir/src/test_gripper_in_gazebo.cpp.o
+[100%] Linking CXX executable test_gripper_in_gazebo
+[100%] Built target test_gripper_in_gazebo
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/hw/my_project/my_ws/install/robotiq_description/share/robotiq_description/config/robotiq_controllers.yaml
+-- Symlinking: /home/hw/my_project/my_ws/install/robotiq_description/share/robotiq_description/launch/gazebo_gripper.launch.py
+-- Symlinking: /home/hw/my_project/my_ws/install/robotiq_description/share/robotiq_description/launch/view_gripper.launch.py
+-- Symlinking: /home/hw/my_project/my_ws/install/robotiq_description/share/robotiq_description/meshes/collision/2f_140/robotiq_2f_140_base_link.stl
+-- Symlinking: /home/hw/my_project/my_ws/install/robotiq_description/share/robotiq_description/meshes/collision/2f_140/robotiq_2f_140_coupling.stl
+-- Symlinking: /home/hw/my_project/my_ws/install/robotiq_description/share/robotiq_description/meshes/collision/2f_140/robotiq_2f_140_inner_finger.stl
+-- Symlinking: /home/hw/my_project/my_ws/install/robotiq_description/share/robotiq_description/meshes/collision/2f_140/robotiq_2f_140_inner_knuckle.stl
+-- Symlinking: /home/hw/my_project/my_ws/install/robotiq_description/share/robotiq_description/meshes/collision/2f_140/robotiq_2f_140_outer_finger.stl
+-- Symlinking: /home/hw/my_project/my_ws/install/robotiq_description/share/robotiq_description/meshes/collision/2f_140/robotiq_2f_140_outer_knuckle.stl
+-- Symlinking: /home/hw/my_project/my_ws/install/robotiq_description/share/robotiq_description/meshes/collision/2f_85/left_finger.stl
+-- Symlinking: /home/hw/my_project/my_ws/install/robotiq_description/share/robotiq_description/meshes/collision/2f_85/left_finger_tip.stl
+-- Symlinking: /home/hw/my_project/my_ws/install/robotiq_description/share/robotiq_description/meshes/collision/2f_85/left_inner_knuckle.stl
+-- Symlinking: /home/hw/my_project/my_ws/install/robotiq_description/share/robotiq_description/meshes/collision/2f_85/left_knuckle.stl
+-- Symlinking: /home/hw/my_project/my_ws/install/robotiq_description/share/robotiq_description/meshes/collision/2f_85/right_finger.stl
+-- Symlinking: /home/hw/my_project/my_ws/install/robotiq_description/share/robotiq_description/meshes/collision/2f_85/right_finger_tip.stl
+-- Symlinking: /home/hw/my_project/my_ws/install/robotiq_description/share/robotiq_description/meshes/collision/2f_85/right_inner_knuckle.stl
+-- Symlinking: /home/hw/my_project/my_ws/install/robotiq_description/share/robotiq_description/meshes/collision/2f_85/right_knuckle.stl
+-- Symlinking: /home/hw/my_project/my_ws/install/robotiq_description/share/robotiq_description/meshes/collision/2f_85/robotiq_base.stl
+-- Symlinking: /home/hw/my_project/my_ws/install/robotiq_description/share/robotiq_description/meshes/collision/2f_85/ur_to_robotiq_adapter.stl
+-- Symlinking: /home/hw/my_project/my_ws/install/robotiq_description/share/robotiq_description/meshes/visual/2f_140/robotiq_2f_140_base_link.stl
+-- Symlinking: /home/hw/my_project/my_ws/install/robotiq_description/share/robotiq_description/meshes/visual/2f_140/robotiq_2f_140_coupling.stl
+-- Symlinking: /home/hw/my_project/my_ws/install/robotiq_description/share/robotiq_description/meshes/visual/2f_140/robotiq_2f_140_inner_finger.stl
+-- Symlinking: /home/hw/my_project/my_ws/install/robotiq_description/share/robotiq_description/meshes/visual/2f_140/robotiq_2f_140_inner_knuckle.stl
+-- Symlinking: /home/hw/my_project/my_ws/install/robotiq_description/share/robotiq_description/meshes/visual/2f_140/robotiq_2f_140_outer_finger.stl
+-- Symlinking: /home/hw/my_project/my_ws/install/robotiq_description/share/robotiq_description/meshes/visual/2f_140/robotiq_2f_140_outer_knuckle.stl
+-- Symlinking: /home/hw/my_project/my_ws/install/robotiq_description/share/robotiq_description/meshes/visual/2f_85/left_finger.dae
+-- Symlinking: /home/hw/my_project/my_ws/install/robotiq_description/share/robotiq_description/meshes/visual/2f_85/left_finger_tip.dae
+-- Symlinking: /home/hw/my_project/my_ws/install/robotiq_description/share/robotiq_description/meshes/visual/2f_85/left_inner_knuckle.dae
+-- Symlinking: /home/hw/my_project/my_ws/install/robotiq_description/share/robotiq_description/meshes/visual/2f_85/left_knuckle.dae
+-- Symlinking: /home/hw/my_project/my_ws/install/robotiq_description/share/robotiq_description/meshes/visual/2f_85/right_finger.dae
+-- Symlinking: /home/hw/my_project/my_ws/install/robotiq_description/share/robotiq_description/meshes/visual/2f_85/right_finger_tip.dae
+-- Symlinking: /home/hw/my_project/my_ws/install/robotiq_description/share/robotiq_description/meshes/visual/2f_85/right_inner_knuckle.dae
+-- Symlinking: /home/hw/my_project/my_ws/install/robotiq_description/share/robotiq_description/meshes/visual/2f_85/right_knuckle.dae
+-- Symlinking: /home/hw/my_project/my_ws/install/robotiq_description/share/robotiq_description/meshes/visual/2f_85/robotiq_base.dae
+-- Symlinking: /home/hw/my_project/my_ws/install/robotiq_description/share/robotiq_description/meshes/visual/2f_85/ur_to_robotiq_adapter.dae
+-- Symlinking: /home/hw/my_project/my_ws/install/robotiq_description/share/robotiq_description/rviz/view_gripper.rviz
+-- Symlinking: /home/hw/my_project/my_ws/install/robotiq_description/share/robotiq_description/urdf/2f_85.ros2_control.xacro
+-- Symlinking: /home/hw/my_project/my_ws/install/robotiq_description/share/robotiq_description/urdf/robotiq_2f_85_gripper.urdf.xacro
+-- Symlinking: /home/hw/my_project/my_ws/install/robotiq_description/share/robotiq_description/urdf/robotiq_2f_85_macro.urdf.xacro
+-- Symlinking: /home/hw/my_project/my_ws/install/robotiq_description/share/robotiq_description/urdf/test.urdf
+-- Symlinking: /home/hw/my_project/my_ws/install/robotiq_description/lib/robotiq_description/test_gripper_in_gazebo
+-- Symlinking: /home/hw/my_project/my_ws/install/robotiq_description/share/ament_index/resource_index/package_run_dependencies/robotiq_description
+-- Symlinking: /home/hw/my_project/my_ws/install/robotiq_description/share/ament_index/resource_index/parent_prefix_path/robotiq_description
+-- Symlinking: /home/hw/my_project/my_ws/install/robotiq_description/share/robotiq_description/environment/ament_prefix_path.sh
+-- Symlinking: /home/hw/my_project/my_ws/install/robotiq_description/share/robotiq_description/environment/ament_prefix_path.dsv
+-- Symlinking: /home/hw/my_project/my_ws/install/robotiq_description/share/robotiq_description/environment/path.sh
+-- Symlinking: /home/hw/my_project/my_ws/install/robotiq_description/share/robotiq_description/environment/path.dsv
+-- Symlinking: /home/hw/my_project/my_ws/install/robotiq_description/share/robotiq_description/local_setup.bash
+-- Symlinking: /home/hw/my_project/my_ws/install/robotiq_description/share/robotiq_description/local_setup.sh
+-- Symlinking: /home/hw/my_project/my_ws/install/robotiq_description/share/robotiq_description/local_setup.zsh
+-- Symlinking: /home/hw/my_project/my_ws/install/robotiq_description/share/robotiq_description/local_setup.dsv
+-- Symlinking: /home/hw/my_project/my_ws/install/robotiq_description/share/robotiq_description/package.dsv
+-- Symlinking: /home/hw/my_project/my_ws/install/robotiq_description/share/ament_index/resource_index/packages/robotiq_description
+-- Symlinking: /home/hw/my_project/my_ws/install/robotiq_description/share/robotiq_description/cmake/robotiq_descriptionConfig.cmake
+-- Symlinking: /home/hw/my_project/my_ws/install/robotiq_description/share/robotiq_description/cmake/robotiq_descriptionConfig-version.cmake
+-- Symlinking: /home/hw/my_project/my_ws/install/robotiq_description/share/robotiq_description/package.xml

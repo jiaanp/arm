@@ -1,0 +1,1 @@
+/home/hw/my_project/my_ws/src/ur5e_gripper_moveit_config/launch/ur5e_gripper_sim_control.launch.py

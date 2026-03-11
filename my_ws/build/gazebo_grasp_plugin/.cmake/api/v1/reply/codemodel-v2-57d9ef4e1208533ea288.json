@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-d66abff6a4aa2c8c1309.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.2"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "gazebo_grasp_plugin",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "gazebo_grasp_fix::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gazebo_grasp_fix-400ca014b3c3a197a027.json",
+					"name" : "gazebo_grasp_fix",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gazebo_grasp_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gazebo_grasp_msgs-322ef997087c203b0128.json",
+					"name" : "gazebo_grasp_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gazebo_grasp_plugin_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gazebo_grasp_plugin_uninstall-10526a0e0080993eb518.json",
+					"name" : "gazebo_grasp_plugin_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-fbefb1a83c85a1ef6988.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/hw/my_project/my_ws/build/gazebo_grasp_plugin",
+		"source" : "/home/hw/my_project/my_ws/src/sim_models/gazebo_grasp_plugin"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

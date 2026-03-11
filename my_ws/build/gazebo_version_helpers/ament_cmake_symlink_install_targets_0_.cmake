@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/hw/my_project/my_ws/build/gazebo_version_helpers/libgazebo_version_helpers.so" "TARGETS" "gazebo_version_helpers" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")

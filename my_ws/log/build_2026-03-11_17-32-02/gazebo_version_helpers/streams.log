@@ -1,0 +1,146 @@
+[0.052s] Invoking command in '/home/hw/my_project/my_ws/build/gazebo_version_helpers': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/hw/my_project/my_ws/src/sim_models/gazebo_version_helpers -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/hw/my_project/my_ws/install/gazebo_version_helpers
+[0.413s] -- The C compiler identification is GNU 11.4.0
+[0.758s] -- The CXX compiler identification is GNU 11.4.0
+[0.758s] -- Detecting C compiler ABI info
+[0.758s] -- Detecting C compiler ABI info - done
+[0.758s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.759s] -- Detecting C compile features
+[0.759s] -- Detecting C compile features - done
+[0.759s] -- Detecting CXX compiler ABI info
+[0.842s] -- Detecting CXX compiler ABI info - done
+[0.852s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.852s] -- Detecting CXX compile features
+[0.854s] -- Detecting CXX compile features - done
+[0.864s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.076s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.173s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.247s] -- Found gazebo_ros_pkgs: 3.9.0 (/opt/ros/humble/share/gazebo_ros_pkgs/cmake)
+[1.250s] -- Found rclcpp: 16.0.17 (/opt/ros/humble/share/rclcpp/cmake)
+[1.338s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.344s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.376s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.387s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.407s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.532s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.532s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.709s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.755s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.862s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.862s] -- Looking for pthread.h
+[2.008s] -- Looking for pthread.h - found
+[2.008s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.105s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.107s] -- Found Threads: TRUE  
+[2.207s] CMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+[2.208s]   The package name passed to `find_package_handle_standard_args` (PkgConfig)
+[2.208s]   does not match the name of the calling package (gazebo).  This can lead to
+[2.208s]   problems in calling code that expects `find_package` result variables
+[2.208s]   (e.g., `_FOUND`) to follow a certain pattern.
+[2.208s] Call Stack (most recent call first):
+[2.208s]   /usr/share/cmake-3.22/Modules/FindPkgConfig.cmake:99 (find_package_handle_standard_args)
+[2.208s]   /usr/lib/x86_64-linux-gnu/cmake/gazebo/gazebo-config.cmake:72 (include)
+[2.208s]   CMakeLists.txt:18 (find_package)
+[2.208s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[2.208s] 
+[2.208s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[2.209s] -- Checking for module 'bullet>=2.82'
+[2.235s] --   Found bullet, version 3.05
+[2.450s] -- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") 
+[2.549s] -- Found assimp: /usr/include (found version "5.2.0") 
+[2.632s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[2.670s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time 
+[2.702s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[2.712s] -- Looking for ignition-math6 -- found version 6.15.1
+[2.728s] -- Searching for dependencies of ignition-math6
+[2.733s] -- Looking for OGRE...
+[2.734s] -- OGRE_PREFIX_WATCH changed.
+[2.741s] -- Checking for module 'OGRE'
+[2.764s] --   Found OGRE, version 1.9.0
+[2.833s] -- Found Ogre Ghadamon (1.9.0)
+[2.841s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[2.851s] -- Looking for OGRE_Paging...
+[2.859s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[2.859s] -- Looking for OGRE_Terrain...
+[2.865s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[2.865s] -- Looking for OGRE_Property...
+[2.869s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[2.869s] -- Looking for OGRE_RTShaderSystem...
+[2.873s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[2.873s] -- Looking for OGRE_Volume...
+[2.879s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[2.879s] -- Looking for OGRE_Overlay...
+[2.885s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[3.015s] -- Looking for ignition-math6 -- found version 6.15.1
+[3.019s] -- Looking for ignition-transport8 -- found version 8.2.1
+[3.019s] -- Searching for dependencies of ignition-transport8
+[3.043s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[3.058s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[3.065s] -- Checking for module 'libzmq >= 4'
+[3.095s] --   Found libzmq , version 4.3.4
+[3.169s] -- Found ZeroMQ: TRUE (Required is at least version "4") 
+[3.177s] -- Checking for module 'uuid'
+[3.202s] --   Found uuid, version 2.37.2
+[3.266s] -- Found UUID: TRUE  
+[3.270s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[3.271s] -- Searching for dependencies of ignition-msgs5
+[3.298s] -- Looking for ignition-math6 -- found version 6.15.1
+[3.307s] -- Checking for module 'tinyxml2'
+[3.334s] --   Found tinyxml2, version 9.0.0
+[3.405s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[3.409s] -- Looking for ignition-common3 -- found version 3.14.0
+[3.410s] -- Searching for dependencies of ignition-common3
+[3.411s] -- Looking for dlfcn.h - found
+[3.413s] -- Looking for libdl - found
+[3.414s] -- Found DL: TRUE  
+[3.434s] -- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") 
+[3.439s] -- Searching for <ignition-common3> component [graphics]
+[3.441s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[3.441s] -- Searching for dependencies of ignition-common3-graphics
+[3.442s] -- Looking for ignition-math6 -- found version 6.15.1
+[3.449s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[3.450s] -- Searching for dependencies of ignition-fuel_tools4
+[3.599s] -- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  
+[3.616s] -- Checking for module 'jsoncpp'
+[3.642s] --   Found jsoncpp, version 1.9.5
+[3.709s] -- Found JSONCPP: TRUE  
+[3.718s] -- Checking for module 'libzip'
+[3.743s] --   Found libzip, version 1.7.3
+[3.814s] -- Found ZIP: TRUE  
+[3.814s] -- Looking for ignition-common3 -- found version 3.14.0
+[3.816s] -- Looking for ignition-math6 -- found version 6.15.1
+[3.816s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[3.928s] -- Configuring done
+[3.948s] -- Generating done
+[3.954s] -- Build files have been written to: /home/hw/my_project/my_ws/build/gazebo_version_helpers
+[4.050s] Invoked command in '/home/hw/my_project/my_ws/build/gazebo_version_helpers' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/hw/my_project/my_ws/src/sim_models/gazebo_version_helpers -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/hw/my_project/my_ws/install/gazebo_version_helpers
+[4.051s] Invoking command in '/home/hw/my_project/my_ws/build/gazebo_version_helpers': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hw/my_project/my_ws/build/gazebo_version_helpers -- -j16 -l16
+[4.142s] [ 50%] Building CXX object CMakeFiles/gazebo_version_helpers.dir/src/GazeboVersionHelpers.cpp.o
+[25.038s] [100%] Linking CXX shared library libgazebo_version_helpers.so
+[25.245s] [100%] Built target gazebo_version_helpers
+[25.269s] Invoked command in '/home/hw/my_project/my_ws/build/gazebo_version_helpers' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hw/my_project/my_ws/build/gazebo_version_helpers -- -j16 -l16
+[25.274s] Invoking command in '/home/hw/my_project/my_ws/build/gazebo_version_helpers': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/hw/my_project/my_ws/build/gazebo_version_helpers
+[25.284s] -- Install configuration: ""
+[25.284s] -- Execute custom install script
+[25.285s] -- Symlinking: /home/hw/my_project/my_ws/install/gazebo_version_helpers/lib/libgazebo_version_helpers.so
+[25.300s] -- Symlinking: /home/hw/my_project/my_ws/install/gazebo_version_helpers/include/gazebo_version_helpers/GazeboVersionHelpers.h
+[25.314s] -- Symlinking: /home/hw/my_project/my_ws/install/gazebo_version_helpers/share/gazebo_version_helpers/environment/library_path.sh
+[25.326s] -- Symlinking: /home/hw/my_project/my_ws/install/gazebo_version_helpers/share/gazebo_version_helpers/environment/library_path.dsv
+[25.341s] -- Symlinking: /home/hw/my_project/my_ws/install/gazebo_version_helpers/share/ament_index/resource_index/package_run_dependencies/gazebo_version_helpers
+[25.355s] -- Symlinking: /home/hw/my_project/my_ws/install/gazebo_version_helpers/share/ament_index/resource_index/parent_prefix_path/gazebo_version_helpers
+[25.367s] -- Symlinking: /home/hw/my_project/my_ws/install/gazebo_version_helpers/share/gazebo_version_helpers/environment/ament_prefix_path.sh
+[25.381s] -- Symlinking: /home/hw/my_project/my_ws/install/gazebo_version_helpers/share/gazebo_version_helpers/environment/ament_prefix_path.dsv
+[25.396s] -- Symlinking: /home/hw/my_project/my_ws/install/gazebo_version_helpers/share/gazebo_version_helpers/environment/path.sh
+[25.409s] -- Symlinking: /home/hw/my_project/my_ws/install/gazebo_version_helpers/share/gazebo_version_helpers/environment/path.dsv
+[25.421s] -- Symlinking: /home/hw/my_project/my_ws/install/gazebo_version_helpers/share/gazebo_version_helpers/local_setup.bash
+[25.434s] -- Symlinking: /home/hw/my_project/my_ws/install/gazebo_version_helpers/share/gazebo_version_helpers/local_setup.sh
+[25.447s] -- Symlinking: /home/hw/my_project/my_ws/install/gazebo_version_helpers/share/gazebo_version_helpers/local_setup.zsh
+[25.459s] -- Symlinking: /home/hw/my_project/my_ws/install/gazebo_version_helpers/share/gazebo_version_helpers/local_setup.dsv
+[25.472s] -- Symlinking: /home/hw/my_project/my_ws/install/gazebo_version_helpers/share/gazebo_version_helpers/package.dsv
+[25.485s] -- Symlinking: /home/hw/my_project/my_ws/install/gazebo_version_helpers/share/ament_index/resource_index/packages/gazebo_version_helpers
+[25.498s] -- Symlinking: /home/hw/my_project/my_ws/install/gazebo_version_helpers/share/gazebo_version_helpers/cmake/ament_cmake_export_include_directories-extras.cmake
+[25.513s] -- Symlinking: /home/hw/my_project/my_ws/install/gazebo_version_helpers/share/gazebo_version_helpers/cmake/ament_cmake_export_libraries-extras.cmake
+[25.527s] -- Symlinking: /home/hw/my_project/my_ws/install/gazebo_version_helpers/share/gazebo_version_helpers/cmake/ament_cmake_export_dependencies-extras.cmake
+[25.536s] -- Symlinking: /home/hw/my_project/my_ws/install/gazebo_version_helpers/share/gazebo_version_helpers/cmake/gazebo_version_helpersConfig.cmake
+[25.551s] -- Symlinking: /home/hw/my_project/my_ws/install/gazebo_version_helpers/share/gazebo_version_helpers/cmake/gazebo_version_helpersConfig-version.cmake
+[25.563s] -- Symlinking: /home/hw/my_project/my_ws/install/gazebo_version_helpers/share/gazebo_version_helpers/package.xml
+[25.680s] Invoked command in '/home/hw/my_project/my_ws/build/gazebo_version_helpers' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/hw/my_project/my_ws/build/gazebo_version_helpers

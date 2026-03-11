@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/hw/my_project/my_ws/build/gazebo_grasp_plugin_ros/grasp_event_republisher" "TARGETS" "grasp_event_republisher" "DESTINATION" "lib/gazebo_grasp_plugin_ros")
