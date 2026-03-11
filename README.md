@@ -22,7 +22,7 @@
 - `ur5e_gripper_description`：UR5e+夹爪描述
 - `robotiq_description`：夹爪描述
 - `robotiq_moveit_config`：夹爪 MoveIt 配置
-- `vision`：检测、定位、目标选择、腕部朝向估计
+- `vision`：检测、定位、目标选择、腕部朝向估计以及语音输入
 - `sim_models/*`：Gazebo/RealSense 相关模型与插件
 
 ## 环境要求
@@ -71,43 +71,20 @@ ros2 launch ur_bringup simulation.launch.py
 cd /home/hw/my_project/my_ws
 source /opt/ros/humble/setup.bash
 source install/setup.bash
-ros2 launch ur_bringup start_grasp.launch.py
+ros2 launch ur_bringup simulation.launch.py   enable_openai_selector:=true   openai_use_llm:=true   openai_model:=gpt-4.1-mini wrist_yaw_invert_delta:=false
+
 ```
 
 ## 常用命令
-
-1. 指定抓取目标
-
-```bash
-ros2 launch ur_bringup start_grasp.launch.py \
-  target_cube_frame:=cube3 \
-  grasp_all_if_no_target:=false
-```
-
-2. 文字指令触发目标选择
+文字指令触发目标选择
 
 ```bash
-ros2 launch ur_bringup start_grasp.launch.py \
-  grasp_command_text:="抓最左边红色方块"
+ros2 launch ur_bringup start_grasp.launch.py   grasp_command_text:="抓绿色方块"
 ```
 
-3. 开启朝向估计调试图
 
-```bash
-ros2 launch ur_bringup simulation.launch.py \
-  enable_wrist_yaw_estimator:=true \
-  wrist_yaw_target_color:=all \
-  wrist_yaw_publish_debug_image:=true
-```
 
-## 关键话题
 
-- `/detection`：检测结果
-- `/grasp_target_frame`：目标方块帧名
-- `/grasp_command_text`：抓取文字指令
-- `/wrist_target_yaw`：腕部目标朝向（绝对）
-- `/wrist_target_yaw_delta`：腕部目标朝向（增量）
-- `/wrist_yaw_debug_image`：腕部朝向调试图
 
 ## 常见问题
 
@@ -143,6 +120,7 @@ export ROS_LOG_DIR=/tmp/ros_logs
 
 ```bash
 export OPENAI_API_KEY=your_api_key
+这里要使用自己的key
 ```
 
 未配置时会自动使用规则匹配模式。
