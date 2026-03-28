@@ -63,6 +63,14 @@ int main(int argc, char **argv) {
       get_or_declare_param<double>(node, "grasp_settle_time_sec", 1.50);
   const double post_grasp_lift_height =
       get_or_declare_param<double>(node, "post_grasp_lift_height", 0.10);
+  const bool clear_octomap_on_final_approach =
+      get_or_declare_param<bool>(node, "clear_octomap_on_final_approach", true);
+  const double octomap_clear_timeout_sec =
+      get_or_declare_param<double>(node, "octomap_clear_timeout_sec", 1.0);
+  const double octomap_clear_wait_sec =
+      get_or_declare_param<double>(node, "octomap_clear_wait_sec", 0.15);
+  const double octomap_recovery_wait_sec =
+      get_or_declare_param<double>(node, "octomap_recovery_wait_sec", 0.50);
   const double place_hover_distance =
       get_or_declare_param<double>(node, "place_hover_distance", 0.08);
   const double place_pause_sec = get_or_declare_param<double>(node, "place_pause_sec", 0.30);
@@ -197,6 +205,13 @@ int main(int argc, char **argv) {
     rclcpp::sleep_for(std::chrono::duration_cast<std::chrono::nanoseconds>(
         std::chrono::duration<double>(pre_grasp_pause_sec)));
   }
+  if (clear_octomap_on_final_approach) {
+    node->clear_octomap(octomap_clear_timeout_sec);
+    if (octomap_clear_wait_sec > 0.0) {
+      rclcpp::sleep_for(std::chrono::duration_cast<std::chrono::nanoseconds>(
+          std::chrono::duration<double>(octomap_clear_wait_sec)));
+    }
+  }
   if (!node->plan_and_execute(grasp_pose)) {
     RCLCPP_WARN(node->get_logger(), "Descend to grasp pose failed");
     rclcpp::shutdown();
@@ -211,6 +226,10 @@ int main(int argc, char **argv) {
     RCLCPP_WARN(node->get_logger(), "Post-grasp lift failed");
     rclcpp::shutdown();
     return 0;
+  }
+  if (octomap_recovery_wait_sec > 0.0) {
+    rclcpp::sleep_for(std::chrono::duration_cast<std::chrono::nanoseconds>(
+        std::chrono::duration<double>(octomap_recovery_wait_sec)));
   }
 
   std::vector<double> place_hover_pose = place_pose;

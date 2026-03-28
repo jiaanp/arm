@@ -93,6 +93,12 @@ def generate_launch_description():
         ),
         Node(
             package="vision",
+            executable="point_cloud_processor",
+            name="point_cloud_processor",
+            output="screen",
+        ),
+        Node(
+            package="vision",
             executable="wrist_yaw_estimator",
             name="wrist_yaw_estimator",
             output="screen",

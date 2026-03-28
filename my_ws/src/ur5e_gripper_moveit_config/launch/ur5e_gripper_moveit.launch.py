@@ -95,22 +95,34 @@ def launch_setup(context, *args, **kwargs):
         "publish_robot_description_semantic":True,
     }
 
+    octomap_config = {
+        "octomap_frame": "camera_depth_optical_frame",
+        "octomap_resolution": 0.02,
+    }
+    octomap_updater_config = load_yaml(
+        "ur5e_gripper_moveit_config", "config/sensors_3d.yaml"
+    )
+
+    move_group_parameters = [
+        robot_description,
+        robot_description_semantic,
+        robot_description_kinematics,
+        robot_description_planning,
+        ompl_planning_pipeline_config,
+        trajectory_execution,
+        moveit_controllers,
+        planning_scene_monitor_parameters,
+        octomap_config,
+        octomap_updater_config,
+        {"use_sim_time": use_sim_time},
+    ]
+
     # Start the actual move_group node/action server
     move_group_node = Node(
         package="moveit_ros_move_group",
         executable="move_group",
         output="screen",
-        parameters=[
-            robot_description,
-            robot_description_semantic,
-            robot_description_kinematics,
-            robot_description_planning,
-            ompl_planning_pipeline_config,
-            trajectory_execution,
-            moveit_controllers,
-            planning_scene_monitor_parameters,
-            {"use_sim_time": use_sim_time},
-        ],
+        parameters=move_group_parameters,
     )
 
 

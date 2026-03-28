@@ -40,7 +40,6 @@ def launch_setup(context, *args, **kwargs):
     openai_api_base = LaunchConfiguration("openai_api_base")
     openai_timeout_sec = LaunchConfiguration("openai_timeout_sec")
     openai_fallback_only = LaunchConfiguration("openai_fallback_only")
-
     # load urdf, launch gazebo
     dual_ur5e_gripper_control_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
@@ -109,7 +108,6 @@ def launch_setup(context, *args, **kwargs):
             "openai_fallback_only": openai_fallback_only,
         }.items(),
     )
-
     nodes_to_launch = [
         dual_ur5e_gripper_control_launch,
         dual_ur5e_gripper_moveit_launch,

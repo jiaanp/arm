@@ -13,7 +13,7 @@ from pathlib import Path
 class ObjDetect(Node):
     def __init__(self):
         super().__init__("obj_detect")
-        default_model_path = str(Path(__file__).resolve().parent / "yolov11" / "models" / "best.pt")
+        default_model_path = "/home/hw/arm-1/my_ws/src/vision/vision/yolov11/models/best.pt"
         self.declare_parameter("model_path", default_model_path)
         self.declare_parameter("depth_topic", "/depth_registered/image_rect")
         self.declare_parameter("image_topic", "/color/image_raw")

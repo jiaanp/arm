@@ -1,5 +1,8 @@
 #include "ur5e_gripper_control/ur5e_gripper.h"
 
+#include <future>
+#include <sstream>
+
 UR5eGripper::UR5eGripper(const rclcpp::NodeOptions &options)
     : Node("ur5e_gripper", options),
       latest_wrist_yaw_stamp_(this->get_clock()->now()) {
@@ -9,11 +12,7 @@ UR5eGripper::UR5eGripper(const rclcpp::NodeOptions &options)
 
   /* create action client */
   gripper_action_client_ = rclcpp_action::create_client<GripperCommand>(this, gripper_action_name_);
-  /* wait for the action server to be available */
-  while (!gripper_action_client_->wait_for_action_server(std::chrono::seconds(1))) {
-    RCLCPP_INFO_THROTTLE(this->get_logger(), *this->get_clock(), 500,
-                         "Waiting for gripper action server to be available...");
-  }
+  clear_octomap_client_ = this->create_client<std_srvs::srv::Empty>("/clear_octomap");
   send_goal_options_.goal_response_callback =
       std::bind(&UR5eGripper::goal_response_callback, this, std::placeholders::_1);
   send_goal_options_.feedback_callback =
@@ -40,6 +39,8 @@ void UR5eGripper::init() {
   /* create move group interface */
   move_group_ = std::make_shared<moveit::planning_interface::MoveGroupInterface>(
       shared_from_this(), PLANNING_GROUP);
+  move_group_->allowReplanning(true);
+  move_group_->setPlanningTime(5.0);
 }
 
 void UR5eGripper::goal_response_callback(const GoalHandleGripperCommand::SharedPtr &goal_handle) {
@@ -144,6 +145,38 @@ bool UR5eGripper::grasp(double gripper_position) {
   }
   RCLCPP_INFO(this->get_logger(), "Sending gripper goal");
   gripper_action_client_->async_send_goal(gripper_goal_msg, send_goal_options_);
+  return true;
+}
+
+bool UR5eGripper::clear_octomap(double timeout_sec) {
+  if (!clear_octomap_client_) {
+    RCLCPP_WARN(this->get_logger(), "clear_octomap client is not initialized");
+    return false;
+  }
+
+  const auto timeout = std::chrono::duration_cast<std::chrono::nanoseconds>(
+      std::chrono::duration<double>(timeout_sec));
+  if (!clear_octomap_client_->wait_for_service(timeout)) {
+    RCLCPP_WARN(this->get_logger(),
+                "clear_octomap service not available within %.2f s", timeout_sec);
+    return false;
+  }
+
+  auto request = std::make_shared<std_srvs::srv::Empty::Request>();
+  auto future = clear_octomap_client_->async_send_request(request);
+  if (future.wait_for(timeout) != std::future_status::ready) {
+    RCLCPP_WARN(this->get_logger(), "Failed to call clear_octomap service");
+    return false;
+  }
+
+  try {
+    future.get();
+  } catch (const std::exception &ex) {
+    RCLCPP_WARN(this->get_logger(), "clear_octomap service call failed: %s", ex.what());
+    return false;
+  }
+
+  RCLCPP_INFO(this->get_logger(), "Cleared octomap before final approach");
   return true;
 }
 

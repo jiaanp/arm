@@ -6,10 +6,10 @@
 
 #include <geometry_msgs/msg/pose_stamped.hpp>
 #include <moveit/move_group_interface/move_group_interface.h>
-#include <moveit/planning_scene_interface/planning_scene_interface.h>
 #include <rclcpp/rclcpp.hpp>
 #include <rclcpp_action/rclcpp_action.hpp>
 #include <std_msgs/msg/float64.hpp>
+#include <std_srvs/srv/empty.hpp>
 #include <tf2_ros/buffer.h>
 #include <tf2_ros/transform_listener.h>
 
@@ -30,6 +30,7 @@ public:
       std::vector<double> &joint_target_positions);
   bool plan_and_execute(const std::vector<double> &target_pose);
   bool grasp(double gripper_position);
+  bool clear_octomap(double timeout_sec = 1.0);
   void get_cube_pose(const std::string &from_frame, const std::string &to_frame,
                     std::vector<double> &cube_pose);
   bool get_latest_wrist_yaw(double &yaw_value, double max_age_sec);
@@ -45,8 +46,8 @@ private:
   void wrist_yaw_callback(const std_msgs::msg::Float64::SharedPtr msg);
 
   std::shared_ptr<moveit::planning_interface::MoveGroupInterface> move_group_;
-  moveit::planning_interface::PlanningSceneInterface planning_scene_interface_;
   rclcpp_action::Client<GripperCommand>::SharedPtr gripper_action_client_;
+  rclcpp::Client<std_srvs::srv::Empty>::SharedPtr clear_octomap_client_;
   rclcpp_action::Client<GripperCommand>::SendGoalOptions send_goal_options_;
   std::unique_ptr<tf2_ros::Buffer> tf_buffer_;
   std::shared_ptr<tf2_ros::TransformListener> tf_listener_;
